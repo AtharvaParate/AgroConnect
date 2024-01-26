@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>AgroConnect - Login/Signup</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background: url("your-farm-image.jpg") no-repeat center center fixed;
+        background-size: cover;
+        font-family: "Arial", sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-tabs {
+        background-color: #3498db;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .nav-link {
+        color: #fff;
+      }
+
+      .nav-link.active {
+        background-color: #fff;
+        color: #3498db;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .btn-primary {
+        background-color: #3498db;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .btn-primary:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Login/Signup Form -->
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="text-center">AgroConnect</h2>
+          <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="login-tab"
+                data-toggle="tab"
+                href="#login"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="signup-tab"
+                data-toggle="tab"
+                href="#signup"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <!-- Login Tab -->
+            <div class="tab-pane fade show active" id="login">
+              <form>
+                <div class="form-group">
+                  <label for="loginEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="loginEmail"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="loginPassword">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="loginPassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-block"
+                  onclick="login()"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+
+            <!-- Signup Tab -->
+            <div class="tab-pane fade" id="signup">
+              <form>
+                <div class="form-group">
+                  <label for="signupName">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="signupName"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="signupEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="signupEmail"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="signupPassword">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="signupPassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-block"
+                  onclick="signup()"
+                >
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function login() {
+        // You can add authentication logic here
+        // For simplicity, let's assume the login is successful
+        alert("Login successful! Redirecting to the homepage.");
+        window.location.href = "Aghome.html"; // Replace with the actual homepage URL
+      }
+
+      function signup() {
+        // You can add user registration logic here
+        // For simplicity, let's assume the signup is successful
+        alert("Sign Up successful! Redirecting to the homepage.");
+        window.location.href = "Aghome.html"; // Replace with the actual homepage URL
+      }
+    </script>
+  </body>
+</html>
